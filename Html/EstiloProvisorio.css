@@ -13,11 +13,7 @@ nav#Menu li{
     transition: 1S;
 }
 
-h6{
-    color: blue;
-    text-decoration: underline;
 
-}
 
 div#LOGOH img{
     left: 80;
@@ -31,5 +27,55 @@ img#LOGOHOJE {
 }
 
 p#MATHEUS {
-    color: blue;
+    color: rgb(84, 84, 87);
 }
+
+
+h3{
+    top: 30%;
+          left: 30%;
+          padding: 2px 2px 2px 2px;
+  }
+  
+  p {
+    font-family: sans-serif;
+    border: 1px solid black; 
+  }
+  
+  @-webkit-keyframes bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  @-moz-keyframes    bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  @-o-keyframes      bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  @keyframes         bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  
+  @-webkit-keyframes bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  @-moz-keyframes    bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  @-o-keyframes      bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  @keyframes         bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  
+  
+  body {
+    margin-top: 13.5rem;
+  
+    color: #999;
+    font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+  
+  
+  }
