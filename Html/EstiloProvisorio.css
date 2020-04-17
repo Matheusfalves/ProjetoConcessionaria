@@ -1,0 +1,21 @@
+nav#Menu ul{
+    list-style: none;
+    font-family: fantasy;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: black;
+
+}
+nav#Menu li{
+    display: inline-block;
+    background-color: RED;
+    padding: 10PX;
+    margin: 5PX;
+    transition: 1S;
+}
+
+h6{
+    color: blue;
+    text-decoration: underline;
+
+}

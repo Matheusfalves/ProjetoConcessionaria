@@ -1,0 +1,48 @@
+Caros,
+
+Primeiramente inscrevam-se nos grupos (Menu lateral verde do BlackBoard, Grupos)
+
+Dia 13.04 Data da apesentaÃ§Ã£o e entrega final do projeto, relacionando aos conteÃºdos realizados durante as aulas, seguem:
+
+A atividade deverÃ¡ ser enviada pelo Blackboard, a qual ainda deverÃ¡ ser disponibilizada.
+
+Arquivo HTMLcom
+cabeÃ§alhos <h1>...
+parÃ¡grafos <p>
+Ã¢ncoras <a href... inclusive para a mesma pÃ¡gina.
+imagens <img ...
+quebra de parÃ¡grafos <br>
+formataÃ§Ã£o de textos <b>,<i>,<tt>,<u> etc...
+formataÃ§Ã£o de fontes <font ...
+utilizaÃ§Ã£o de style para parÃ¡grafos e textos... <p style ...
+listas nÃ£o numeradas <ul ...
+listas numeradas <ol ...
+listas de definiÃ§Ãµes <dl ...
+Tabelas com estilos e formataÃ§Ãµes <table...
+Merge de cÃ©lulas e colunas, rowspan e colspan ...
+Linhas horizontais <hr ...
+Utilizar css inline, css incorporado e css externo
+Utilizar tambÃ©m o Bootstrap
+
+FormulÃ¡rio HTML para cadastro de usuÃ¡rios contendo: nome, email, senha, data de nascimento, sexo, estado civil, telefone residencial, telefone celular, endereÃ§o, mensagem;
+Programa Javascript para validar o preenchimento do nome (script na mesma pÃ¡gina), repetir email e senha e conferir se estÃ£o estÃ£o corretos, nÃ£o permitir continuar o cadastro (apresentar mensagem de erro na pÃ¡gina, caso esteja faltando algum dado, ou se existe algum dado incorreto, por exemplo senha repetida ou email repetido, nÃ£o utilize HTML5 para validaÃ§Ã£o, utilize o JavaScript), ser preenchido corretamente apresentar mensagem em tela (dados corretos), obs: o cadastro efetivo com banco de dados deverÃ¡ ser visto nas prÃ³ximas aulas.
+
+Tag input: text, checkbox, radio, button
+Textarea
+Select
+Fieldset
+
+
+Apresentar a pÃ¡gina principal e institucional (sobre a empresa, missÃ£o, visÃ£o, valor, produtos, serviÃ§os, endereÃ§o mapa google)
+Apresentar a pÃ¡gina de minicurriculo padronizada dos membros da equipe
+Apresentar a tela de cadastro de usuÃ¡rios (sem banco de dados)
+
+Obs: ApÃ³s a validaÃ§Ã£o dos dados de cadastro do usuÃ¡rio e caso os dados estejam corretos, apresente os dados que o usuÃ¡rio utilizou em uma Ã¡rea da pÃ¡gina HTML e informe que os dados estÃ£o corretos
+
+A soluÃ§Ã£o deverÃ¡ estar hospedada em um servidor Web para acesso externo e validaÃ§Ã£o (recomendado o 000webhost, pois Ã© gratuÃ­to, se utilizar algum outro tambÃ©m serÃ¡ vÃ¡lido);
+DeverÃ£o ser enviadas as pÃ¡ginas e cÃ³digos para validaÃ§ao em um arquivo zip (pela atividade no BlackBoard);
+
+Anexar na atividade um arquivo zip contendo:
+- Os arquivos html/JavaScript/CSS
+
+Att
