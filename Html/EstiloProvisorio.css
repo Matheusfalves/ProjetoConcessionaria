@@ -73,9 +73,7 @@ h3{
   }
   
   
-  body {
-    margin-top: 13.5rem;
-  
+  body {  
     color: #999;
     font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
     text-align: center;
@@ -87,13 +85,13 @@ h3{
   div#mandelao{
     background-color: black;
   }
-  div#TopCatalogo{
-      background-color: blue;
-      top: 0;
+  form#TopCatalogo{
+      background-color: black;
+      top: -40;
 
   }
 
   header#1{
-      top: 0
+      top: 0;
       background-color: black;
   }
