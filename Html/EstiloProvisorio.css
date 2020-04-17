@@ -3,8 +3,7 @@ nav#Menu ul{
     font-family: fantasy;
     text-transform: uppercase;
     text-decoration: underline;
-    text-decoration-color: black;
-
+    
 }
 nav#Menu li{
     display: inline-block;
@@ -18,4 +17,15 @@ h6{
     color: blue;
     text-decoration: underline;
 
+}
+
+div#LOGOH img{
+    left: 80;
+    top: 0;
+    border-image: round;
+    image-resolution: 80;
+}
+
+img#LOGOHOJE {
+    left: 50;
 }
