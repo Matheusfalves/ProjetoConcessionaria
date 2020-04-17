@@ -13,11 +13,15 @@ nav#Menu li{
     transition: 1S;
 }
 
+h6{
+    color: blue;
+    text-decoration: underline;
 
+}
 
 div#LOGOH img{
     left: 80;
-    top: 0;
+    top: -50;
     border-image: round;
     image-resolution: 80;
 }
@@ -78,4 +82,18 @@ h3{
     background-color: #ffffff;
   
   
+  }
+
+  div#mandelao{
+    background-color: black;
+  }
+  div#TopCatalogo{
+      background-color: blue;
+      top: 0;
+
+  }
+
+  header#1{
+      top: 0
+      background-color: black;
   }
