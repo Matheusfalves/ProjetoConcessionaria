@@ -46,52 +46,74 @@ h3{
     border: 1px solid black; 
   }
   
-  @-webkit-keyframes bg-scrolling-reverse {
-    100% { background-position: $bg-width $bg-height; }
-  }
-  @-moz-keyframes    bg-scrolling-reverse {
-    100% { background-position: $bg-width $bg-height; }
-  }
-  @-o-keyframes      bg-scrolling-reverse {
-    100% { background-position: $bg-width $bg-height; }
-  }
-  @keyframes         bg-scrolling-reverse {
-    100% { background-position: $bg-width $bg-height; }
-  }
-  
-  @-webkit-keyframes bg-scrolling {
-    0% { background-position: $bg-width $bg-height; }
-  }
-  @-moz-keyframes    bg-scrolling {
-    0% { background-position: $bg-width $bg-height; }
-  }
-  @-o-keyframes      bg-scrolling {
-    0% { background-position: $bg-width $bg-height; }
-  }
-  @keyframes         bg-scrolling {
-    0% { background-position: $bg-width $bg-height; }
-  }
-  
-  
-  body {  
-    color: #999;
-    font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
-    text-align: center;
-    background-color: #ffffff;
-  
-  
-  }
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+@-moz-keyframes    bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+@-o-keyframes      bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+@keyframes         bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
 
-  div#mandelao{
+@-webkit-keyframes bg-scrolling {
+  0% { background-position: $bg-width $bg-height; }
+}
+@-moz-keyframes    bg-scrolling {
+  0% { background-position: $bg-width $bg-height; }
+}
+@-o-keyframes      bg-scrolling {
+  0% { background-position: $bg-width $bg-height; }
+}
+@keyframes         bg-scrolling {
+  0% { background-position: $bg-width $bg-height; }
+}
+
+  
+body {  
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+
+
+}
+
+div#mandelao{
+  background-color: black;
+}
+form#TopCatalogo{
     background-color: black;
-  }
-  form#TopCatalogo{
-      background-color: black;
-      top: -40;
+    top: -40;
 
-  }
+}
 
-  header#1{
-      top: 0;
-      background-color: black;
-  }
+header#1{
+    top: 0;
+    background-color: black;
+}
+
+/**/
+nav#MenuAN{
+  list-style: none;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+
+nav#MenuAN ul {
+  text-transform: uppercase;
+  background-color: grey ;
+  margin: 5px;
+  transition: 1s;
+}
+nav#MenuAN li{
+  display: inline-block;
+  background-color:red;
+  padding: 2px;
+}
+  
