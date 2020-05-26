@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
- <head>
-  <link rel="Stylesheet" type="text/css" href="estilo.css">
-  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="Stylesheet">
-  <meta charset="utf-8">
-  <title>Tela de Cadastro</title>
- </head>
  <body>
   <div class="cadastro>
    <img src="Definir Imagem">
@@ -43,7 +37,20 @@
     "<br />
     <input type="submit" name="" value="Cadastrar"><br />
 
-   </form>
+</form>
+<?php
+if(isset($_POST["Cadastrar"])){
+  $nome=$_POST["fnome"];
+  $email=$_POST["femail"];
+  $senha=$_POST["fsenha"];
+  $dataNas=$_POST["dataNas"];
+  $Sexo=$_POST["fsexo"];
+  echo "<br>o usuario foi cadastrado $vnome com sucesso ";
+}
+else{
+  echo "<br>O usuario nao foi cadastrado com sucesso";
+}
+?>
  
  </body>
 </html>
