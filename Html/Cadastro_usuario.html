@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  <meta charset="utf-8">
+</head>
+ <body>
+    <ul id = "Menu">  
+      <a href="Index.html">Pagina inicial</a>
+      <a href="Login_usuario.html">Logar conta</a> 
+  </ul>
+  <div class="cadastro">
+    <img src="Definir Imagem">
+  <h1>Cadastro</h1>
+  <form method="get" action="dados.php">
+    <p>Usuário:</p>
+    <input type="text" name="User" placeholder="Insira seu nome de usuário" required><br/> 
+     <p>E-mail:</p>
+    <input type="text" name="Email" placeholder="Insira seu e-mail" required><br/>
+     <p>Confirme o e-mail:</p>
+    <input type="text" name="CEmail" placeholder="Insira seu e-mail" required><br/>
+    
+    <p>Senha:</p>
+    <input type="password" name="Senha" placeholder="Insira sua senha" required><br/>
+    
+     <p>Confirme a senha:</p>
+    <input type="password" name="CSenha" placeholder="Insira sua senha" required><br/>
+    
+     <p>Data de Nascimento:</p>
+    <input type="text" name="DataN" placeholder="Insira sua data de nascimento"><br/>
+  
+     <p>Sexo:</p>
+    <input type="text" name="UIUISEXO" placeholder="Insira seu sexo"><br/>
+    
+     <p>Estado Cívil:</p>
+    <input type="text" name="Ecivil" placeholder="Insira seu estado cívil"><br/>
+     <p>Telefone Celular:</p>
+    <input type="text" name="TELC" placeholder="Insira seu telefone celular"><br/>
+     <p>Telefone Residencial:</p>
+    <input type="text" name="TELR" placeholder="Insira seu telefone residencial"><br/>
+     <p>Endereço:</p>
+    <input type="text" name="ENDERECO" placeholder="Insira seu endereço"><br/>
+    <br/>
+    <input type="submit" name="botao" value="Cadastrar" onclick="validar()"><br/>
+  </form>
+
+
+ 
+ </body>
+</html>
