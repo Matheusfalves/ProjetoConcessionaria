@@ -18,7 +18,7 @@
     <p>Senha:</p>
     <input type="password" name="Senha" placeholder="Insira sua senha"><br /><br />
     <input type="submit" name="" value="Login"><br />
-    <a href="Cadastro_usuario.html"> Ainda não possui uma conta? click aqui </a> </a>
+    <a href="Cadastro_usuario.html"> Ainda não possui uma conta? click aqui</a> </a>
    </form>
  <br/>
 <?php
