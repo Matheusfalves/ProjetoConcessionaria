@@ -23,10 +23,10 @@
  <br/>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "treino";
+$servername = "db4free.net";
+$username = "carwaydb";
+$password = "userbancon2";
+$dbname = "EntregaN2.sexta";
 
 $login = $_POST["Login"];
 $senha = $_POST["Senha"];

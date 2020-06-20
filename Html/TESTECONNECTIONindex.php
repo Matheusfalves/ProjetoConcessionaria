@@ -1,6 +1,10 @@
 
     <?php
     //Teste conexão
+    $servername = "db4free.net";
+$username = "carwaydb";
+$password = "userbancon2";
+$dbname = "EntregaN2.sexta";
     public function Connect(){
         $conexao = mysql_connect ("localhost","Dba","V\eC0iYiqPosW)0H");
         if ($conexao == TRUE){

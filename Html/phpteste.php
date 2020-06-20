@@ -1,10 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "treino";
-
+$servername = "db4free.net";
+$username = "carwaydb";
+$password = "userbancon2";
+$dbname = "EntregaN2.sexta";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
