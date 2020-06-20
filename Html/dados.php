@@ -1,43 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-BR" >
-<head>
-    <title>"Autentication"</title>
-</head>
-<body>
-    <ul id = "Menu">  
-            <a href="Index.html">Pagina inicial</a>
-            <a href="Login_usuario.html">Logar conta</a> 
-    </ul>
 <?php
-$Vlogin = array("Funcionario","ADM","Gerente","Matheus","Joao","Gabriel","Victor","Gustavo");
-$VSenha = array("1234","ADM","GER1234","mata1@1","joao1@1","Gabr1@1","vict1@1","gust1@1");
-$user=$_GET["User"];
-$email=$_GET["Email"];
-$senha=$_GET["Senha"];
-$CEmail=$_GET["CEmail"];
-$CSenha=$_GET["CSenha"];
-$dataNas=$_GET["DataN"];
-$Sexo=$_GET["UIUISEXO"];
-$ESTADOCIVIL=$_GET["Ecivil"];
-$TELEFONEC=$_GET["TELC"];
-$TELEFONER=$_GET["TELR"];
-$ENDERECO =$_GET["ENDERECO"];
+$user=$_POST["user"];
+$email=$_POST["email"];
+$senha=$_POST["senha"];
+$dataN=$_POST["dataN"];
+$sexo=$_POST["UIUISEXO"];
+$civil=$_POST["eCivil"];
+$celular=$_POST["cel"];
+$telefone=$_POST["tel"];
+$endereco =$_POST["endereco"];
 
-//if ($a >0 ) || ($b <3) { //or
-if($user != null || $senha != null || $email =! null && $email === $CEmail || $senha === $CSenha){
-    echo "O usuario foi criado com sucesso...";
-    echo "Va para a proxima pagina ";
-    echo "<a href='indexLogado.html'>Pagina inicial</a>";
-    
+$servername = "db4free.net";
+$database = "carwaydb";
+$username = "userbancon2";
+$password = "EntregaN2.sexta";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-else{
-    echo "Você não digitou um dos principais campos que são Email ou Senha Ou login";
+$sql = "INSERT INTO usuarios(usuario, email, senha, data_nascimento, sexo, estado_civil, tel_res, tel_cel, endereco) VALUES ('$user', '$email', '$senha', '$dataN', '$sexo', '$civil',
+'$telefone', '$celular', '$endereco')";
+if ($conn->query($sql) === TRUE) {
+  include_once('indexLogado.html');
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
-
-
-
 ?>
-
-</body>
-</html>

@@ -17,25 +17,41 @@
     
     <p>Senha:</p>
     <input type="password" name="Senha" placeholder="Insira sua senha"><br /><br />
-    <input type="submit" name="" value="Login"><br />
+    <input type="submit" name="sub" value="input" ><br />
     <a href="Cadastro_usuario.html"> Ainda não possui uma conta? click aqui</a> </a>
    </form>
  <br/>
-<?php
-$Vlogin = array("Funcionario","ADM","Gerente","Matheus","Joao","Gabriel","Victor","Gustavo");
-$VSenha = array("1234","ADM","GER1234","mata1@1","joao1@1","Gabr1@1","vict1@1","gust1@1");
 
-for($i=0; $i<=count($Vlogin);$i++){
-   if($_POST["Login"] = $Vlogin[$i] and $_POST["Senha"]=$VSenha[$i]){
-      echo "O usuario foi logado com sucesso";
-      //header("indexLogado.html");
-      echo "<a href='indexLogado.html'> Pagina inicial </a>";
-   break;
-   }
-   else{
-      echo "Você tem de se registrar para entrar";
-   }  
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "treino";
+
+$login = $_POST["Login"];
+$senha = $_POST["Senha"];
+
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+die("Connection failed: " . mysqli_connect_error());
 }
+   $sql = "SELECT nome, senha FROM pessoas WHERE nome ='$login' and senha = '$senha'";
+   $result = mysqli_query($conn, $sql);
+   
+      if (mysqli_num_rows($result) == 1) {
+            echo "logado com sucesso!";
+            include_once("indexLogado.html");
+      } 
+      else {
+         echo "Não encontrado, efetuar o login de novo ou se cadastre em nosso site";
+         include_once("Login_usuario.php"); 
+      }   
+mysqli_close($conn);
+
+
 ?>
  </body>
 </html>
